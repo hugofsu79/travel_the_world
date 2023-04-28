@@ -8,5 +8,91 @@ couleurs:
 font:
 font-family: 'Lato', sans-serif;
 font-family: 'Poppins', sans-serif;
-
+padidng top: 2em;
 */
+
+
+/*  Body
+=================================== */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    color: #f08537;
+}
+/*  Avis
+=================================== */
+
+.avis {
+    background-image: url(./png/background_avis.png);
+    background-size: cover;
+    padding: 2em;
+}
+
+.avis h2:after {
+    background-color: #f08537;
+}
+
+.avis blockquote {
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: #f08537;
+}
+
+blockquote:before {
+    content: ”\0022″;
+    font-size: 800%;
+    font-family: 'Sanchez', serif;
+}
+
+.avis cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+.avis cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.icone-speak b{
+    padding: 5px;
+    size: 2em;
+}
+/*  bandeau
+=================================== */
+
+.bandeau {
+    padding: 20px;
+    background-color: #f08537;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.bandeau i {
+    margin-bottom: 0.9em;
+}
+
+/*  vidéo youtube
+=================================== */
+
+.playeur_youtube {
+    padding: 20px;
+}
+
+/*  Media queries
+=================================== */
+
+@media screen and (max-width:576px) {
+
+    .bandeau .col-sm-4 {
+       margin: 1em;
+    }
+
+}
