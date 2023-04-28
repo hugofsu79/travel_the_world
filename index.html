@@ -17,11 +17,294 @@
     <script src="https://kit.fontawesome.com/826eec2b4c.js" crossorigin="anonymous"></script>
 
     <!--style-->
-    <link rel="stylesheet" href="Resources/css/style.css">
+    <link rel="stylesheet" href="./Resources/style.css">
 
 </head>
 
 <body>
+
+
+
+
+
+    <div class="container-fluid w-75">
+        <form class="card p-5"style="background-color:#baebca">
+            <div class="row">
+                <h2>Réservations</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label" style="color:#5DA271; font-size:large;">Nom</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre Nom">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label" style="color:#5DA271; font-size:large;">Prénom</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Entrez votre prénom"></textarea>
+                  </div>
+            </div>
+            <div class="pb-3">
+                <select class="form-select mb-3" aria-label="Default select example" style="color:#5DA271; font-size:large;">
+                    <option selected>Destination</option>
+                    <option value="1">Frontenay Rohan Rohan</option>
+                    <option value="2">Bagdad</option>
+                    <option value="3">Pôle nord</option>
+                </select>
+                <select class="form-select mb-3" aria-label="Default select example" style="color:#5DA271; font-size:large;">
+                    <option selected>Nombre d'adulte</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">...</option>
+                </select>
+                <select class="form-select mb-3" aria-label="Default select example" style="color:#5DA271; font-size:large;">
+                    <option selected>Nombre d'enfants (-14ans)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">...</option>
+                </select>
+                <select class="form-select" aria-label="Default select example" style="color:#5DA271; font-size:large;">
+                    <option selected>La formule</option>
+                    <option value="1">Standart</option>
+                    <option value="2">Premium</option>
+                    <option value="3">Excellence</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Assurance annulation
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Assurance décès
+                </label>
+              </div>
+        </form>
+    </div>
+
+ <!-- TARIFS
+        ====================================================-->
+
+        <section class="section-tarifs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>NOS FORMULES</h2>
+                        <h3>Exemple : tarifs pour un voyage au pôle-Nord</h3>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="pack">
+                            <div class="pack-title">
+                                <h3>Standart</h3>
+                                <h4>975 € <span>/TTC</span></h4>
+                                <p>30 jours d'essai offerts.</p>
+                            </div>
+                            <div class="pack-content">
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i>Avion + Hôtel</li>
+                                    <li><i class="fa-solid fa-circle-xmark"></i>repas et boissons</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>idéal pour les petits budgets</li>
+                                    <li style="color:#FFF;">.</li>
+                                </ul>
+                            </div>
+                            <div class="pack-signup">
+                                <button hreff="" class="btn-pack">Réservez</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="pack pack-premium">
+                            <div class="pack-title">
+                                <h3>Premium</h3>
+                                <h4>1495 € <span>/TTC</span></h4>
+                                <p>Pour les amoureux du thé.</p>
+                                <p class="pack-title-premium">Le plus populaire</p>
+                            </div>
+                            <div class="pack-content">
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i>Avion + Hôtel</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>Transports + extra</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>repas et boissons inclus</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>circuit de découverte de l'île</li>
+                                </ul>
+                            </div>
+                            <div class="pack-signup">
+                                <button hreff="" class="btn-pack">Réservez</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="pack">
+                            <div class="pack-title">
+                                <h3>Excellence</h3>
+                                <h4>2495 €<span>/TTC</span></h4>
+                                <p>Pour les passionnés de thé.</p>
+                            </div>
+                            <div class="pack-content">
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i>Avion + Hôtel</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>Transports + extra</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>repas et boissons inclus (à volonté)</li>
+                                    <li><i class="fa-solid fa-circle-check"></i>circuits, tour en bâteau, et autres surprises</li>
+                                </ul>
+                            </div>
+                            <div class="pack-signup">
+                                <button hreff="" class="btn-pack">Réservez</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- CONTACTEZ-NOUS
+            ====================================================-->
+
+    <section>
+        <div class="container" id="contact1">
+            <div class="row pt-5 pb-5">
+
+                <!-- <div class="col-md-1"></div> -->
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form">
+                                <h2>Contactez-nous</h2>
+                                <p>A l’heure de la démocratisation des voyages lointains, notre objectif est d’organiser
+                                    des voyages interculturels permettant de rencontrer les populations locales.
+                                    L’aventure, l’esprit de groupe et même le « risque » sont présents, et les voyageurs
+                                    découvrent la réalité quotidienne et sociale des pays. L'offre s’étoffe petit à
+                                    petit avec l’expérience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="phone">
+                                <p><i class="fa-solid fa-phone fs-5" style="color:#baebca"></i> 05.49.34.65.33</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="adress">
+                                <p><i class="fa-sharp fa-solid fa-location-dot fs-5" style="color:#baebca"></i> 6 rue du Temple, 79000 Niort</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <!-- NOM ERT EMAIL -->
+                        <div class="row pb-4">
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <label>Nom :</label>
+                                    <input type="text" id="name" style="background-color:#baebca"/>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <label>Email</label>
+                                    <input type="email" id="email" placeholder="Ajoutez votre email" style="background-color:#baebca" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SERVICE CONTACT -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <label>Sélectionnez le service</label>
+                                    <select style="background-color:#baebca">
+                                        <option>Service client</option>
+                                        <option>Service comptable</option>
+                                        <option>SAV</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MESSAGE -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="contact-form pt-4">
+                                    <label>Votre message :</label>
+                                    <textarea id="message" rows="3" class="contact-message " style="background-color:#baebca"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BOUTON ENVOYER -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <button class="btn">Envoyez</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22042.685863861618!2d-0.49851012568359354!3d46.3230284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48073032d11465c9%3A0xc3b70eda184a8cda!2sVisages%20du%20monde!5e0!3m2!1sfr!2sfr!4v1682682208136!5m2!1sfr!2sfr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- FOOTERS ====================================================-->
+
+    <footer>
+        <!-- Logos contacts ====================================================-->
+        <div class="container">
+            <div class="row">
+
+                <div class="row logo pt-5 mt-2 text-center ">
+                    <div class="col-2 pt-2 mt-4 offset-2">
+                        <a href="https://www.google.fr/maps/place/Visages+du+monde/@46.2424077,-0.9699278,11z/data=!4m10!1m2!2m1!1soffice+du+tourisme+visage+du+monde!3m6!1s0x48073032d11465c9:0xc3b70eda184a8cda!8m2!3d46.3230284!4d-0.4604013!15sCiJvZmZpY2UgZHUgdG91cmlzbWUgdmlzYWdlIGR1IG1vbmRlIgOIAQGSAQ10cmF2ZWxfYWdlbmN54AEA!16s%2Fg%2F1tfvsb64" id="github" target="_blank"><i
+                                class="fa-solid fa-location-dot"></i></a>
+                    </div>
+
+                    <div class="col-2 pt-2 mt-4">
+                        <a href="www.facebook.com" id="linkedin" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                    <div class="col-2 pt-2 mt-4">
+                        <a href="mailto:montagne.julian974@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                    <div class="col-2 pt-2 mt-4">
+                        <a href="tel:05.49.26.76.58" id="telephone" target="_blank"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Travel Blog - 2023. <a href="">Mentions légales</a></p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

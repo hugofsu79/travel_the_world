@@ -10,3 +10,150 @@ font-family: 'Lato', sans-serif;
 font-family: 'Poppins', sans-serif;
 
 */
+
+/* GLOBAL
+################################# */
+
+h1, h2 {
+    font-family: 'Poppins.700','lato Regular.400','Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h1 {
+        color:#eee;
+        letter-spacing: -1px;
+        font-weight: 300;
+        word-spacing: 8px;
+}
+h2 {
+    color:#5DA271;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Nos TARIFS
+################################## */
+.section-tarifs {
+    background-color: rgba(237, 232, 232, 0.813);
+}
+
+.pack {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.pack h3 {
+    color: green;
+    font-weight: 505;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+    position: relative;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    margin-left: 45px;
+    position:absolute;
+    left: 47px;
+    top:5px
+}
+.pack-premium {
+    background-color:  #1fbe51be;
+    color: rgb(237, 232, 232);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3) !important;
+
+
+}
+.pack-premium .pack-title {
+    border-bottom: 2px solid rgba(236, 228, 228, 0.849) ;
+}
+.pack-title-premium {
+    font-size: 14px;
+    position:absolute;
+    top:10px;
+    right: 10px;
+    background-color: #fff;
+    color:green;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 2px solid rgba(122, 117, 117, 0.5) ;
+    position: relative;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding:20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+.pack-signup {
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgba(0,242,96,0.6);
+    transition: all 1s;
+    color:#22262450;
+}
+button {
+    border:green;
+    border-radius: 10px;
+    width:130px;
+    background-color: green;
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+/* FOOTER
+################################## */
+
+footer {
+    background-color: rgb(246, 246, 247);
+    color:#fff;
+}
+
+/* logos contacts */
+
+.col-2 , .col-2 a {
+    z-index: 3;
+    height: 200px;
+}
+
+.col-2 .fa-brands {
+    color: #5DA271;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2vw;
+    background-color: transparent;
+}
+
+a .fa-solid {
+    color: #5DA271;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2vw;
+    background-color: transparent;
+}
+
+
+.copyright {
+    text-align: center;
+}
