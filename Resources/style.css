@@ -11,6 +11,7 @@ font-family: 'Poppins', sans-serif;
 padidng top: 2em;
 */
 
+<<<<<<< HEAD
 
 /*  Body
 =================================== */
@@ -240,5 +241,126 @@ a .fa-solid {
 
     .bandeau .col-sm-4 {
        margin: 1em;
+=======
+*/
+
+
+/* Reset 
+======================================== */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* header 
+======================================== */
+#background-video {
+    opacity: 80%;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+#background-video {
+    object-fit: cover;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+header span {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 650px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+}
+
+
+/* Navbar */
+#navbar {
+    background-color: #f08537;
+}
+
+#bouton-recherche {
+    border-color: azure;
+    color: azure;
+    background-color: #f08537;
+}
+
+#bouton-recherche:hover {
+    background-color: azure;
+    color: #f08537;
+}
+
+
+/* Formulaire voyage */
+#formulaire-voyage {
+    position: relative;
+    bottom: 750px;
+}
+
+#formulaire-voyage form {
+    padding-top: 15px;
+    border-radius: 20px;
+    margin: 150px;
+}
+
+#formulaire-voyage input {
+    background-color: transparent;
+    color: azure;
+    border: 2px solid;
+}
+
+#formulaire-voyage #adultes, #enfants {
+    background-color: transparent;
+    color: azure;
+    border: 2px solid;
+}
+
+/* Main 
+======================================== */
+
+/* Section partenaires */
+#partenaires img {
+    width: 100%;
+    background-size: cover;          
+    background-position: top center; 
+    background-repeat: no-repeat;
+}
+
+#partenaires h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#partenaires a {
+    text-align: center;
+    background-color: #f08537;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header video h1 {
+    z-index: 1;
+}
+
+
+/* Media queries 
+======================================== */
+@media screen and ( min-width: 992px ) and ( max-width: 1013px ) {
+    #navbar ul li a {
+        padding: 4px;
+>>>>>>> alexis
     }
 }
