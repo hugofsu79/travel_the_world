@@ -8,8 +8,8 @@
     <title>Travel the world</title>
 
     <!--bootstraps-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <!--font-->
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
@@ -17,11 +17,224 @@
     <script src="https://kit.fontawesome.com/826eec2b4c.js" crossorigin="anonymous"></script>
 
     <!--style-->
-    <link rel="stylesheet" href="Resources/css/style.css">
-
+    <link rel="stylesheet" href="./Resources/style.css">
 </head>
 
-<body>
+        <!-- Body
+        ============================================== -->
+        <body>
+
+
+            <!-- Header 
+            ============================================== -->
+            <header>
+    
+    
+                <!-- Navbar 
+                ============================================== -->
+                <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+                    <div class="container-fluid">
+    
+                        <a href="#">
+                            <img src="./Resources/png/logo_ttw/logo_entier_blanc.png" alt="Travel the word" style="width: 200px">
+                        </a>
+    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item fw-medium mx-3">
+                                    <a class="nav-link active text-white" href="#">Nos formules</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">Avis</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">Nous contactez</a>
+                                </li>
+                                <li class="nav-item dropdown mx-3">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Connexion</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="">
+                                            <a class="dropdown-item" href="#">Mon compte</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">S'inscrire</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit" id="bouton-recherche">Recherche</button>
+                        </form>
+
+                    </div>
+                </nav>
+
+                <video id="background-video" autoplay loop muted>
+                    <source src="./videos/vague2.mp4" type="video/mp4">
+                </video>
+
+                <h1><span>Travel the world</span></h1>
+
+                <div class="container text-center" id="formulaire-voyage">
+                    <form class="form-inline ">
+
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="destination" class="sr-only">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Destination">
+                        </div>
+
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="depart" class="sr-only">Date de départ</label>
+                            <input type="date" class="form-control" id="depart" placeholder="Date de départ">
+                        </div>
+
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="retour" class="sr-only">Date de retour</label>
+                            <input type="date" class="form-control" id="retour" placeholder="Date de retour">
+                        </div>
+
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="adultes" class="sr-only">Nombre d'adultes</label>
+                            <select class="form-control" id="adultes">
+                                <option selected>Adultes</option>
+                                <option>1 adulte</option>
+                                <option>2 adultes</option>
+                                <option>3 adultes</option>
+                                <option>4 adultes</option>
+                                <option>5 adultes</option>
+                                <option>6 adultes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="enfants" class="sr-only">Nombre d'enfants</label>
+                            <select class="form-control" id="enfants">
+                                <option selected>Enfants</option>
+                                <option>1 enfant</option>
+                                <option>2 enfants</option>
+                                <option>3 enfants</option>
+                                <option>4 enfants</option>
+                                <option>5 enfants</option>
+                                <option>6 enfants</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mb-2" id="bouton-recherche">Rechercher</button>
+
+                    </form>
+                </div>
+
+            </header>
+
+
+            <!-- Main 
+            ============================================== -->
+            <main>
+
+
+                    <!-- Bandeau -->
+
+                    <!-- Video -->
+
+
+                <!-- Partenaires 
+                ============================================== -->
+                <section id="partenaires">
+                    <div class="container text-center">
+                            <h2>Nos partenaires</h2> 
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./Resources/png/logo_ttw/image-one.jpeg" class="card-img-top" alt="...">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-light bouton">Light</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./Resources/png/logo_ttw/image-two.jpeg" class="card-img-top" alt="...">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-light bouton">Light</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./Resources/png/logo_ttw/image-three.jpeg" class="card-img-top" alt="...">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-light bouton">Light</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+
+
+
+            
+    
+            
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <!-- Logos contacts ====================================================-->
+        <div class="container">
+            <div class="row">
+
+                <div class="row logo pt-5 mt-2 text-center ">
+                    <div class="col-2 pt-2 mt-4 offset-2">
+                        <a href="https://www.google.fr/maps/place/Visages+du+monde/@46.2424077,-0.9699278,11z/data=!4m10!1m2!2m1!1soffice+du+tourisme+visage+du+monde!3m6!1s0x48073032d11465c9:0xc3b70eda184a8cda!8m2!3d46.3230284!4d-0.4604013!15sCiJvZmZpY2UgZHUgdG91cmlzbWUgdmlzYWdlIGR1IG1vbmRlIgOIAQGSAQ10cmF2ZWxfYWdlbmN54AEA!16s%2Fg%2F1tfvsb64" id="github" target="_blank"><i
+                                class="fa-solid fa-location-dot"></i></a>
+                    </div>
+
+                    <div class="col-2 pt-2 mt-4">
+                        <a href="www.facebook.com" id="linkedin" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                    <div class="col-2 pt-2 mt-4">
+                        <a href="mailto:montagne.julian974@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                    <div class="col-2 pt-2 mt-4">
+                        <a href="tel:05.49.26.76.58" id="telephone" target="_blank"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Travel Blog - 2023. <a href="">Mentions légales</a></p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
